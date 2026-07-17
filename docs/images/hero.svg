@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial Product Design GB/T</title>
+  <desc id="desc">A design-first workflow from product intent through native 3D quality gates to GB/T engineering handoff.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="0.55" stop-color="#0d2240"/>
+      <stop offset="1" stop-color="#123b5f"/>
+    </linearGradient>
+    <linearGradient id="cube" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#bae6fd">
+    <path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200"/>
+    <path d="M80 0V420M160 0V420M240 0V420M320 0V420M400 0V420M480 0V420M560 0V420M640 0V420M720 0V420M800 0V420M880 0V420M960 0V420M1040 0V420M1120 0V420"/>
+  </g>
+  <g transform="translate(70 62)" fill="none" stroke-linejoin="round">
+    <path d="M105 45 235 10l120 65-132 38Z" fill="#164e63" stroke="#67e8f9" stroke-width="3"/>
+    <path d="M105 45v150l118 70V113Z" fill="#0f766e" stroke="#5eead4" stroke-width="3"/>
+    <path d="m223 113 132-38v151l-132 39Z" fill="#075985" stroke="#38bdf8" stroke-width="3"/>
+    <path d="M105 115 223 183l132-38" stroke="#e0f2fe" stroke-width="2" stroke-dasharray="8 7" opacity="0.85"/>
+    <path d="M105 143 223 211l132-38" stroke="#e0f2fe" stroke-width="2" stroke-dasharray="8 7" opacity="0.85"/>
+    <rect x="257" y="132" width="45" height="22" rx="5" stroke="#f8fafc" stroke-width="3"/>
+    <circle cx="333" cy="132" r="11" stroke="#f8fafc" stroke-width="3"/>
+    <path d="M174 205c-16-35 18-63 53-50" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+    <path d="m216 145 15 12-18 6" fill="#fbbf24" stroke="#fbbf24"/>
+    <circle cx="229" cy="137" r="92" stroke="url(#cube)" stroke-width="3" opacity="0.35" filter="url(#glow)"/>
+  </g>
+  <g fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="500" y="112" font-size="48" font-weight="700">Industrial Product Design</text>
+    <text x="500" y="161" font-size="36" font-weight="650" fill="#67e8f9">with GB/T Handoff</text>
+    <text x="500" y="213" font-size="19" fill="#cbd5e1">Brief · Design DNA · Concepts · Native 3D · Motion · Evidence</text>
+    <g transform="translate(500 260)" font-size="16" font-weight="600">
+      <rect width="142" height="42" rx="21" fill="#0f766e"/><text x="71" y="27" text-anchor="middle">DESIGN FIRST</text>
+      <rect x="155" width="154" height="42" rx="21" fill="#0369a1"/><text x="232" y="27" text-anchor="middle">EVIDENCE BOUND</text>
+      <rect x="322" width="142" height="42" rx="21" fill="#334155"/><text x="393" y="27" text-anchor="middle">LOCAL FIRST</text>
+    </g>
+    <text x="500" y="350" font-size="16" fill="#94a3b8">Open Codex Skill for physical product development</text>
+  </g>
+</svg>

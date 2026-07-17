@@ -1,0 +1,52 @@
+name: Validator or workflow bug
+description: Report a reproducible Skill, script, schema, or documentation defect
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for providing a bounded, reproducible report. Remove credentials and private project data.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or commit hash
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill routing or instructions
+        - Deterministic validator
+        - Quickstart or installation
+        - CAD/backend workflow
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Include sanitized input, command, expected status, and actual status.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, Codex surface, CAD/backend, bridge, and versions when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and limitations
+      description: Attach minimal nonprivate logs, report excerpts, hashes, or screenshots.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and privacy
+      options:
+        - label: I removed credentials, private paths, customer data, proprietary CAD, and restricted standards content.
+          required: true

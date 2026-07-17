@@ -1,85 +1,184 @@
-# Industrial Product Design GB/T
+<p align="center">
+  <img src="docs/images/hero.svg" alt="Industrial Product Design GB/T — from design intent to engineering handoff" width="100%">
+</p>
 
-An industrial design and product design Skill for Codex and compatible AI agents. It develops product intent into coherent concepts, refined native 3D, review evidence, and a revision-bound GB/T engineering handoff.
+<p align="center">
+  <a href="https://github.com/beiming183-cloud/industrial-product-design-gbt/actions/workflows/validate.yml"><img alt="Validate skill" src="https://github.com/beiming183-cloud/industrial-product-design-gbt/actions/workflows/validate.yml/badge.svg"></a>
+  <a href="https://github.com/beiming183-cloud/industrial-product-design-gbt/releases"><img alt="GitHub release" src="https://img.shields.io/github/v/release/beiming183-cloud/industrial-product-design-gbt?display_name=tag&sort=semver"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-2563EB.svg"></a>
+  <a href="https://github.com/beiming183-cloud/industrial-product-design-gbt/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/beiming183-cloud/industrial-product-design-gbt?style=flat"></a>
+</p>
 
-面向工业设计、产品设计与硬件产品开发的 Codex Skill。它优先解决产品定位、造型比例、人机交互、CMF、接口整合、运动状态和 3D 成品质量，再把确认后的方案交给 GB/T 机械制图流程。
+<p align="center"><strong>Design the product before documenting the geometry.</strong></p>
 
-## Why this Skill exists
+An open Codex Skill that connects industrial-design intent, concept selection, ergonomics, CMF, parametric 3D quality gates, motion review, and evidence-bound GB/T engineering handoff.
 
-Correct dimensions and valid solids do not prove that a product looks convincing, works well, or is ready for engineering. This Skill inserts explicit design gates before manufacturing CAD and drafting:
+面向实体产品开发的工业设计 Skill：先解决用户场景、造型比例、人机、CMF、接口、运动状态和三维成品质量，再把已确认的设计修订交给国标机械制图流程。
 
-- design brief, user scenario, task flow, and product architecture;
-- meaningful concept alternatives at a common scale;
-- silhouette, proportion, visual hierarchy, form language, and 360-degree coherence;
-- ergonomics, controls, ports, cable routing, service access, and purchased-part envelopes;
-- CMF, part breaks, gaps, flush relationships, fillet families, and detail density;
-- parametric CAD massing, refined native 3D, motion configurations, and product rendering;
-- surface, interference, stability, DFM, risk, evidence, and design-review gates;
-- a controlled handoff to downstream GB/T drawings, GPS/GD&T, BOM, inspection, and release.
+> **Status: v0.1 early preview.** The workflow and deterministic gates are usable today. Native high-quality CAD execution still depends on the connected backend, and this project does not replace professional design, safety, compliance, or engineering approval.
 
-## Typical uses
+## Why it exists
 
-Use it for consumer electronics, appliances, smart-home hardware, enclosures, controls, rotating mechanisms, desktop products, tools, equipment, and other physical products where appearance, interaction, proportion, or 3D quality affects success.
+| Common failure | This project adds |
+| --- | --- |
+| Valid solids are mistaken for good product design | Separate massing, form-language, interface, surface, render, and human review gates |
+| Critical dimensions are copied from images or memory | A/B/C/D authority levels and mandatory `TBD` behavior |
+| 2D, 3D, renders, and motion states drift apart | Shared parameters, document identity, configurations, and revision-bound manifests |
+| Engineering pressure silently removes the innovation | Immutable design-DNA lock and regression views |
+| Repeated project feedback disappears in chat history | Private local project/branch/iteration learning records |
 
-Example requests:
+## Five-minute quickstart
 
-- Design a compact desktop charging product from a written brief.
-- Redesign an appliance enclosure from reference images without copying protected details.
-- Review whether a CAD model has a coherent fillet, gap, interface, and CMF language.
-- Validate 0°, 90°, 180°, and 270° mechanism states before detailed engineering.
-- Prepare an approved industrial-design package for GB/T mechanical drafting.
-
-## Design and drafting are separate gates
-
-| Skill | Primary responsibility | Completion evidence |
-| --- | --- | --- |
-| `industrial-product-design-gbt` | Product intent, concept selection, form, ergonomics, CMF, native 3D quality, motion, rendering, and design approval | Approved design revision, configuration set, interface table, review record, and handoff package |
-| `mechanical-drafting-gbt` | Manufacturing definition, GB/T drawing rules, dimensions, fits, GPS/GD&T, BOM, inspection, plotting, exchange, and release compliance | Audited engineering drawings and release evidence |
-
-Keep both Skills installed when a project must progress from industrial design into formal manufacturing documentation.
-
-## Install
-
-Clone the repository and copy `skills/industrial-product-design-gbt` into the skills directory used by Codex or another compatible skill runner.
+### 1. Install the Skill
 
 ```powershell
 git clone https://github.com/beiming183-cloud/industrial-product-design-gbt.git
+Copy-Item -Recurse -Force `
+  .\industrial-product-design-gbt\skills\industrial-product-design-gbt `
+  "$env:USERPROFILE\.codex\skills\industrial-product-design-gbt"
 ```
 
-The required entry point is:
+Restart Codex, then invoke:
 
 ```text
-skills/industrial-product-design-gbt/SKILL.md
+Use $industrial-product-design-gbt to develop three same-scale concepts for a compact desktop product. Lock the design DNA, stop after the massing review, and keep unsupported interface dimensions TBD.
 ```
 
-## Included quality gates
+### 2. Run the dependency-free gate demo
 
-The workflow includes backend capability, document identity, massing, form language, interface, motion, surface, render, design review, and engineering handoff gates. A failed gate returns the project to the preceding design stage instead of hiding the problem with extra dimensions or presentation graphics.
+Python 3.10+ is sufficient for this quickstart:
 
-Deterministic scripts check:
+```powershell
+Set-Location .\industrial-product-design-gbt
+.\examples\quickstart\run_demo.ps1
+```
 
-- pre-CAD design-brief completeness and immutable design DNA;
-- A/B/C/D authority levels for critical dimensions and TBD behavior;
-- active document and revision identity;
-- 2D/3D interface alignment;
-- named motion states and limits;
-- render camera and image integrity;
-- model and handoff manifest consistency;
-- local CAD and reference-image library inventory.
-- privacy-bounded cross-window project feedback capture in Git-ignored local storage.
+The demo proves three behaviors:
 
-Validator success is deliberately narrow. It does not by itself prove aesthetics, usability, physical performance, safety, manufacturability, compliance, or approval.
+- a complete pre-CAD design brief passes;
+- A/C-controlled critical dimensions may be confirmed;
+- a brand-page-derived AC opening marked `CONFIRMED` is rejected.
 
-## Reference-image and CAD-library learning
+See [`examples/quickstart`](examples/quickstart) for inputs and expected reports.
 
-The Skill can extract reusable design-language observations from product images, sketches, competitor references, DWG libraries, and JPG previews while separating observation, inference, assumption, and confirmed requirement. Personal manifests, absolute paths, and third-party source assets remain local and are excluded from Git.
+## Workflow
 
-## Search topics
+```mermaid
+flowchart LR
+  A["Brief + Design DNA"] --> B["3 Comparable Concepts"]
+  B --> C["Parametric Massing"]
+  C --> D["Refined Native 3D"]
+  D --> E["Design + Motion Review"]
+  E --> F["Revision-bound Handoff"]
+  F --> G["mechanical-drafting-gbt"]
+```
 
-Industrial design, product design, consumer product design, hardware design, enclosure design, appliance design, CMF design, ergonomics, human factors, design review, concept design, parametric CAD, AutoCAD, 3D modeling, surface quality, product rendering, motion design, mechanism design, DFM, GB/T mechanical drafting, Codex Skill, AI agent Skill.
+Every failed gate returns to the owning design stage. Extra dimensions, labels, or polished renders cannot convert a failed concept into an approved product.
 
-工业设计、产品设计、消费电子设计、家电设计、硬件设计、外壳设计、产品造型、CMF、人机工程、交互设计、参数化 CAD、AutoCAD、三维建模、曲面质量、产品渲染、机构设计、可制造性、GB/T 机械制图、Codex Skills。
+## What is included
+
+- product brief, immutable design DNA, concept comparison, and maturity gates;
+- form language, proportion, silhouette, detail density, CMF, and 360-degree review;
+- ergonomics, controls, ports, cables, purchased-part envelopes, stability, and service;
+- native 3D capability, identity, interface, motion, surface, render, and handoff gates;
+- mains and moving-part architecture boundaries without invented compliance claims;
+- DRC/DFM, evidence, revision, configuration, and GB/T downstream routing;
+- reference-image learning with observation/inference/assumption separation;
+- private local feedback capture across repeated project iterations.
+
+### Deterministic validators
+
+| Script | Narrow claim it checks |
+| --- | --- |
+| `check_pre_cad_brief.py` | Required design fields and design DNA are present |
+| `check_dimension_authority.py` | A/B/C/D source class and critical-dimension TBD policy agree |
+| `check_document_identity.py` | Requested and active document identities agree |
+| `check_interface_alignment.py` | 2D and 3D interface tables share centers, sizes, orientation, and source |
+| `validate_motion_states.py` | Named states, limits, and recorded collision/cable dispositions exist |
+| `compare_render_viewset.py` | Cameras and rendered image sets are revision-bound and nonblank |
+| `check_model_manifest.py` | Required artifacts belong to one revision/configuration/source hash |
+| `record_project_feedback.py` | Local learning records are structured, private, unique, and iteration-linked |
+
+Validator success never proves beauty, usability, strength, safety, manufacturability, certification, or approval outside the declared fields.
+
+## Design and drafting are separate Skills
+
+| Skill | Owns | Completion evidence |
+| --- | --- | --- |
+| `industrial-product-design-gbt` | Intent, concepts, form, ergonomics, CMF, native 3D quality, motion, rendering, design approval | Approved design revision, interface/configuration tables, review evidence, handoff package |
+| `mechanical-drafting-gbt` | Manufacturing definition, GB/T drawing rules, dimensions, fits, GPS/GD&T, BOM, inspection, plotting, exchange | Audited engineering drawings and release evidence |
+
+The drafting Skill may not silently redesign the product. A change to silhouette, interface, design DNA, or motion returns upstream for design review.
+
+## Honest capability boundary
+
+This repository is strongest for small consumer products, electronics enclosures, desktop products, appliances, controls, tools, and compact mechanisms. It is an early workflow project, not a certified CAD kernel, commercial CAD plugin, or standards database.
+
+Professional review remains mandatory for mains power, batteries, medical use, pressure, gas, high temperature, structural safety, high-speed mechanisms, automotive use, and certification-critical products.
+
+## Repository map
+
+```text
+skills/industrial-product-design-gbt/
+├── SKILL.md                # concise workflow and routing
+├── agents/openai.yaml      # Codex UI metadata
+├── references/             # progressively loaded design and engineering guidance
+├── scripts/                # deterministic narrow validators
+└── assets/                 # templates and camera presets
+examples/quickstart/        # runnable gate demo
+docs/images/                # repository visuals
+tools/                      # repository validation
+```
+
+## FAQ
+
+<details>
+<summary><strong>Does it generate finished CAD by itself?</strong></summary>
+
+No. The Skill routes work to available CAD, B-rep, surface, rendering, and drafting backends. A primitive-only backend is limited to massing and may not claim refined product quality.
+</details>
+
+<details>
+<summary><strong>Does it contain GB/T standard dimensions?</strong></summary>
+
+It contains workflow and drafting guidance, not unauthorized normative tables. Critical dimensions require authorized standards, supplier-controlled data, or controlled measurement.
+</details>
+
+<details>
+<summary><strong>Can I use public brand pages to model socket or connector geometry?</strong></summary>
+
+Only for the bounded public claim. Unpublished openings, shutters, terminals, mounting, and internal geometry remain `TBD` until level A or C evidence exists.
+</details>
+
+<details>
+<summary><strong>Will my project feedback be uploaded?</strong></summary>
+
+No by default. Personal feedback is stored under Git-ignored `local-learning/` with `may_publish: false`.
+</details>
+
+<details>
+<summary><strong>Is this only for AutoCAD?</strong></summary>
+
+No. The workflow is backend-neutral, but each claimed result requires a backend that can actually create and verify it. AutoCAD-specific execution guidance is loaded only when relevant.
+</details>
+
+## Roadmap
+
+- [x] Design-first workflow and GB/T handoff contract
+- [x] Evidence authority, 3D quality, motion, DRC, and failure-learning gates
+- [x] Private repeated-iteration project learning
+- [x] Runnable quickstart and repository validation
+- [ ] Three complete public product case studies
+- [ ] Pinned local parametric B-rep backend fixtures
+- [ ] GB/T drawing output example paired with the exact approved design revision
+- [ ] Stable v1.0 after real-project forward tests
+
+## Contributing
+
+Industrial designers, mechanical engineers, CAD automation developers, ergonomics practitioners, and manufacturing reviewers are welcome. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) or open a structured [design-case proposal](https://github.com/beiming183-cloud/industrial-product-design-gbt/issues/new/choose).
+
+Do not contribute copyrighted standard tables, proprietary CAD, customer data, unlicensed product images, or unsupported safety claims.
 
 ## License
 
-MIT License. See `LICENSE`.
+[MIT](LICENSE). Use, study, adapt, and contribute—while preserving the evidence and approval boundaries of the products you design.

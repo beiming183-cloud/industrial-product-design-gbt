@@ -1,0 +1,31 @@
+{
+  "boundary": "A pass proves the declared source class and TBD policy are internally consistent. It does not authenticate a source, validate a measurement, prove standard applicability, or approve the dimension.",
+  "dimensions": [
+    {
+      "authority_basis": "brand_public_parameter",
+      "authority_level": "B",
+      "category": "ac-opening",
+      "critical_detail": true,
+      "dimension_kind": "detail_geometry",
+      "id": "hand-drawn-ac-opening",
+      "source_id": "official-product-page",
+      "status": "CONFIRMED"
+    }
+  ],
+  "document_id": "desktop-control-concept",
+  "findings": [
+    {
+      "code": "CRITICAL_DETAIL_REQUIRES_A_OR_C",
+      "id": "hand-drawn-ac-opening",
+      "level": "B"
+    },
+    {
+      "code": "LOW_AUTHORITY_CRITICAL_DETAIL_MUST_BE_TBD",
+      "id": "hand-drawn-ac-opening",
+      "level": "B"
+    }
+  ],
+  "revision": "A",
+  "status": "FAIL",
+  "validator": "check_dimension_authority"
+}

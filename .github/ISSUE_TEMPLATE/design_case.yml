@@ -1,0 +1,41 @@
+name: Public design-case proposal
+description: Propose an anonymized physical-product case study or regression fixture
+title: "[Case]: "
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Product category and problem
+      placeholder: Small desktop enclosure with a purchased USB module
+    validations:
+      required: true
+  - type: textarea
+    id: dna
+    attributes:
+      label: Immutable design DNA and scope
+      description: State what must remain unchanged and which maturity level the case may claim.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Available evidence
+      description: Brief, synthetic or licensed references, controlled dimensions, source CAD, views, reports, and tests.
+    validations:
+      required: true
+  - type: textarea
+    id: learning
+    attributes:
+      label: Transferable learning target
+      description: What gate, backend capability, validator, or design decision should this case test?
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and safety
+      options:
+        - label: I have the right to share every proposed artifact and removed private data.
+          required: true
+        - label: I will not submit restricted standards tables or unsupported safety/compliance claims.
+          required: true

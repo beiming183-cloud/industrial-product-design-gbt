@@ -1,0 +1,28 @@
+{
+  "document_id": "desktop-control-concept",
+  "revision": "A",
+  "dimensions": [
+    {
+      "id": "ac-module-reservation",
+      "dimension_kind": "detail_geometry",
+      "category": "ac-opening",
+      "value": "TBD",
+      "units": "mm",
+      "status": "TBD",
+      "authority_level": "B",
+      "authority_basis": "brand_public_parameter",
+      "source_id": "official-product-page"
+    },
+    {
+      "id": "measured-usb-cutout",
+      "dimension_kind": "detail_geometry",
+      "category": "usb-cutout",
+      "value": [9.0, 3.2],
+      "units": "mm",
+      "status": "CONFIRMED",
+      "authority_level": "C",
+      "authority_basis": "controlled_measurement",
+      "source_id": "sample-01-measurement-record"
+    }
+  ]
+}

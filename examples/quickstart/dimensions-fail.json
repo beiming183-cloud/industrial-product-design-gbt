@@ -1,0 +1,17 @@
+{
+  "document_id": "desktop-control-concept",
+  "revision": "A",
+  "dimensions": [
+    {
+      "id": "hand-drawn-ac-opening",
+      "dimension_kind": "detail_geometry",
+      "category": "ac-opening",
+      "value": [10, 20],
+      "units": "mm",
+      "status": "CONFIRMED",
+      "authority_level": "B",
+      "authority_basis": "brand_public_parameter",
+      "source_id": "official-product-page"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "boundary": "A pass proves the declared source class and TBD policy are internally consistent. It does not authenticate a source, validate a measurement, prove standard applicability, or approve the dimension.",
+  "dimensions": [
+    {
+      "authority_basis": "brand_public_parameter",
+      "authority_level": "B",
+      "category": "ac-opening",
+      "critical_detail": true,
+      "dimension_kind": "detail_geometry",
+      "id": "ac-module-reservation",
+      "source_id": "official-product-page",
+      "status": "TBD"
+    },
+    {
+      "authority_basis": "controlled_measurement",
+      "authority_level": "C",
+      "category": "usb-cutout",
+      "critical_detail": true,
+      "dimension_kind": "detail_geometry",
+      "id": "measured-usb-cutout",
+      "source_id": "sample-01-measurement-record",
+      "status": "CONFIRMED"
+    }
+  ],
+  "document_id": "desktop-control-concept",
+  "findings": [],
+  "revision": "A",
+  "status": "PASS",
+  "validator": "check_dimension_authority"
+}

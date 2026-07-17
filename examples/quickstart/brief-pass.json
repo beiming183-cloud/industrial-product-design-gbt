@@ -1,0 +1,26 @@
+{
+  "product_id": "desktop-control-concept",
+  "revision": "A",
+  "brief": {
+    "user_scenarios": ["Desktop setup, normal operation, cable connection, cleaning, and service access"],
+    "interface_inventory": [
+      {"id": "usb-group", "type": "USB module reservation", "count": 2},
+      {"id": "control", "type": "rotary control", "count": 1}
+    ],
+    "adapter_and_mating_envelopes": [
+      {"id": "usb-cable", "status": "TBD", "assumption": "Concept envelope pending selected cable"}
+    ],
+    "cable_directions": ["Rear exit with strain-relief and bend envelope"],
+    "motion_actions": {"status": "NOT_APPLICABLE", "reason": "The enclosure is fixed; only the control knob rotates"},
+    "footprint_and_context": {"surface": "desk", "occupied_envelope": "120 x 90 mm concept target"},
+    "stability_and_tip_risks": ["Rear cable pull and control actuation require later physical testing"],
+    "product_character": ["compact", "calm", "architectural", "low visual noise"],
+    "design_dna": {
+      "immutable": ["low horizontal posture", "centered control hierarchy"],
+      "adjustable": ["corner radius", "CMF", "vent pattern"],
+      "prohibited": ["tower posture", "decorative interface plates"],
+      "authority": "concept owner",
+      "regression_views": ["front", "top", "three-quarter"]
+    }
+  }
+}

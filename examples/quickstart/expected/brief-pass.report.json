@@ -1,0 +1,19 @@
+{
+  "boundary": "A pass proves required brief fields are present and minimally structured. It does not prove the assumptions, design DNA, ergonomics, stability, safety, or concept quality are correct.",
+  "findings": [],
+  "product_id": "desktop-control-concept",
+  "required_fields": [
+    "user_scenarios",
+    "interface_inventory",
+    "adapter_and_mating_envelopes",
+    "cable_directions",
+    "motion_actions",
+    "footprint_and_context",
+    "stability_and_tip_risks",
+    "product_character",
+    "design_dna"
+  ],
+  "revision": "A",
+  "status": "PASS",
+  "validator": "check_pre_cad_brief"
+}
