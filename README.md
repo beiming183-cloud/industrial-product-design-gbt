@@ -66,6 +66,7 @@ Deterministic scripts check:
 - render camera and image integrity;
 - model and handoff manifest consistency;
 - local CAD and reference-image library inventory.
+- privacy-bounded cross-window project feedback capture in Git-ignored local storage.
 
 Validator success is deliberately narrow. It does not by itself prove aesthetics, usability, physical performance, safety, manufacturability, compliance, or approval.
 
