@@ -1,0 +1,60 @@
+{
+  "boundary": "A pass proves the declared source class and TBD policy are internally consistent. It does not authenticate a source, validate a measurement, prove standard applicability, or approve the dimension.",
+  "dimensions": [
+    {
+      "authority_basis": "project_controlled_drawing",
+      "authority_level": "A",
+      "category": "product-envelope",
+      "critical_detail": false,
+      "dimension_kind": "project_envelope",
+      "id": "overall-footprint",
+      "source_id": "orbit_params.py@Rev-C",
+      "status": "CONFIRMED"
+    },
+    {
+      "authority_basis": "project_controlled_drawing",
+      "authority_level": "A",
+      "category": "product-envelope",
+      "critical_detail": false,
+      "dimension_kind": "project_envelope",
+      "id": "overall-height",
+      "source_id": "orbit_params.py@Rev-C",
+      "status": "CONFIRMED"
+    },
+    {
+      "authority_basis": "concept_assumption",
+      "authority_level": "D",
+      "category": "cable-interface",
+      "critical_detail": true,
+      "dimension_kind": "detail_geometry",
+      "id": "cable-slot-width",
+      "source_id": "prototype-assumption-cable-od-3-to-6-mm",
+      "status": "TBD"
+    },
+    {
+      "authority_basis": "concept_assumption",
+      "authority_level": "D",
+      "category": "rotary-fit",
+      "critical_detail": false,
+      "dimension_kind": "prototype_fit",
+      "id": "rotor-bushing-diametral-clearance",
+      "source_id": "prototype-printer-and-material-not-selected",
+      "status": "TBD"
+    },
+    {
+      "authority_basis": "concept_assumption",
+      "authority_level": "D",
+      "category": "installation-hole",
+      "critical_detail": true,
+      "dimension_kind": "detail_geometry",
+      "id": "m4-fastener-envelope",
+      "source_id": "supplier-part-not-selected",
+      "status": "TBD"
+    }
+  ],
+  "document_id": "orbit-cable-dock",
+  "findings": [],
+  "revision": "C",
+  "status": "PASS",
+  "validator": "check_dimension_authority"
+}

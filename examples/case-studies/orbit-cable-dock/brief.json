@@ -1,0 +1,80 @@
+{
+  "product_id": "orbit-cable-dock",
+  "revision": "C",
+  "maturity": "engineering-candidate-for-prototype",
+  "selection_authority": "Delegated by the user: design, run, review, and optimize autonomously",
+  "brief": {
+    "user_scenarios": [
+      "A desk worker keeps four low-voltage charging or peripheral cables from falling behind the desk",
+      "The user rotates the upper carrier to bring one cable toward the active working side",
+      "The user inserts and removes cables from open radial slots without threading a connector through a closed hole",
+      "The product is lifted for cleaning and opened only for prototype service"
+    ],
+    "interface_inventory": [
+      {"id": "cable-capture-slot", "type": "open radial cable groove", "count": 4},
+      {"id": "rotary-index", "type": "single-axis rotary carrier with four index positions", "count": 1},
+      {"id": "desk-support", "type": "low soft-square footprint", "count": 1},
+      {"id": "service-fastener", "type": "central M4 fastener envelope; supplier and engagement TBD", "count": 1}
+    ],
+    "adapter_and_mating_envelopes": [
+      {"id": "cable-od", "status": "TBD", "assumption": "Concept target is flexible cable OD 3-6 mm; verify with physical cable set"},
+      {"id": "m4-retainer", "status": "TBD", "assumption": "Envelope only until a controlled screw and insert are selected"}
+    ],
+    "cable_directions": [
+      "Four radial exits at 90-degree increments",
+      "Cable bends remain outside the product; no cable crosses the rotating joint",
+      "The active cable may be oriented toward front, left, rear, or right by rotating the carrier"
+    ],
+    "motion_actions": {
+      "status": "APPLICABLE",
+      "joint": "rotor_about_z",
+      "limits_deg": [0, 360],
+      "indexed_states_deg": [0, 90, 180, 270],
+      "intermediate_review_deg": 45
+    },
+    "footprint_and_context": {
+      "surface": "indoor desk",
+      "occupied_envelope": "96 x 96 x 26.7 mm nominal CAD envelope",
+      "target": "at most 100 x 100 mm footprint and below 30 mm overall height"
+    },
+    "stability_and_tip_risks": [
+      "Low 96 mm support footprint is intentionally wider than the 84 mm moving carrier",
+      "Mass, foot friction, cable pull force, and edge-loading remain NOT_EVALUATED until a physical prototype is tested",
+      "No mains, battery, heat source, sharp tool, or high-speed motion is present"
+    ],
+    "product_character": [
+      "low and calm",
+      "architectural soft-square base",
+      "clear circular rotary action",
+      "one restrained teal technology accent",
+      "no tower posture, pasted plates, exposed tray layers, or decorative vents"
+    ],
+    "design_dna": {
+      "immutable": [
+        "low desktop posture",
+        "four open radial cable capture slots",
+        "one circular upper carrier rotating about the vertical centre axis",
+        "four explicit indexed orientations",
+        "visible continuous shadow gap between fixed base and moving carrier",
+        "footprint remains inside 100 x 100 mm"
+      ],
+      "adjustable": [
+        "slot width after cable sampling",
+        "detent geometry and force",
+        "base and rotor edge radii",
+        "CMF values",
+        "fastener and insert selection"
+      ],
+      "prohibited": [
+        "tall drum or tower posture",
+        "unequal cable slots",
+        "rotation states shown as unexplained duplicate bodies",
+        "proud sticker-like interface plates",
+        "claiming stability, detent life, or manufacturability without test evidence"
+      ],
+      "authority": "User delegated concept selection and optimization for this case study; final appearance approval remains external",
+      "regression_views": ["top", "front", "right", "isometric", "45-degree state", "X=0 half-section", "exploded"]
+    }
+  }
+}
+

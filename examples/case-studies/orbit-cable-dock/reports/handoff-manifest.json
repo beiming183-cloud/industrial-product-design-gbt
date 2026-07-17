@@ -1,0 +1,145 @@
+{
+  "artifacts": [
+    {
+      "bytes": 8044,
+      "index": 0,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\cad\\orbit_model.py",
+      "role": "native-source",
+      "sha256": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586"
+    },
+    {
+      "bytes": 339777,
+      "index": 1,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\models\\orbit-final.step",
+      "role": "step",
+      "sha256": "bd21c0a64c25cbec3024f13163ed11ceb293b0be903630da81116a29dd6b3661"
+    },
+    {
+      "bytes": 2403334,
+      "index": 2,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\models\\meshes\\orbit-final.stl",
+      "role": "stl",
+      "sha256": "fbb84a7a24bdbfb9baa76ef81e2ae96487803d47165549b92e89b13c21655ffb"
+    },
+    {
+      "bytes": 78641,
+      "index": 3,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\engineering\\orbit-engineering-handoff.dxf",
+      "role": "dxf",
+      "sha256": "f56652734b1b63a803bf88b7bc415216d3d2366ac76ece89fd894ea1d99e0a14"
+    },
+    {
+      "bytes": 481618,
+      "index": 4,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\engineering\\orbit-engineering-handoff.pdf",
+      "role": "pdf",
+      "sha256": "da8f501e3849ec18acb2d38659ff51b6796f63e0a698de986de85096d3886ff8"
+    },
+    {
+      "bytes": 1661,
+      "index": 5,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\design-review.md",
+      "role": "design-review",
+      "sha256": "826e27e1c2f694182cdc85e018ce92b5314b0b3319e25c884e222c46ca670120"
+    },
+    {
+      "bytes": 1552,
+      "index": 6,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\engineering\\motion-states.json",
+      "role": "motion-table",
+      "sha256": "d2bb27b0398191eb6575d96c9703529fdaa927920cce97945a9c31728056e517"
+    },
+    {
+      "bytes": 381830,
+      "index": 7,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\review\\final-hero.png",
+      "role": "render",
+      "sha256": "bf3f31b4e901b8ba9a39768437383cc2d0023f10db546e499b1d2602c5b57ed6"
+    },
+    {
+      "bytes": 358772,
+      "index": 8,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\review\\final-exploded.png",
+      "role": "exploded-render",
+      "sha256": "53b15429946cc852534f8057581b5e88261424a70cc1bc2ea710613f7ee59219"
+    },
+    {
+      "bytes": 455594,
+      "index": 9,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\review\\final-section.png",
+      "role": "section-render",
+      "sha256": "cda038a6a84371d311d45c8a715a9c645057c3d3b195e819dcc6c0e9645fffd3"
+    },
+    {
+      "bytes": 369138,
+      "index": 10,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\review\\motion-state-045.png",
+      "role": "motion-render",
+      "sha256": "d7c11116a219612565ba55a4a424297725b8ac7933c8c91de6d851bc05102534"
+    },
+    {
+      "bytes": 259721,
+      "index": 11,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\review\\concept-board.png",
+      "role": "concept-board",
+      "sha256": "52a4e45f84db11d84840e0e170c65a6b79dd4290f88e5651c9a9741b42037447"
+    },
+    {
+      "bytes": 360835,
+      "index": 12,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\output\\review\\failed-to-final.png",
+      "role": "failure-board",
+      "sha256": "50141e9d7daa7a45c3f11dd92d576a4eea19e69d424366f6fadf1cd33cb38781"
+    },
+    {
+      "bytes": 3464,
+      "index": 13,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\reports\\geometry-drc.json",
+      "role": "geometry-drc",
+      "sha256": "463dd6bed75f5cace7ad1d5d4f32001bc6daceb8c4bcf0e3424ddadb6810f1be"
+    },
+    {
+      "bytes": 768,
+      "index": 14,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\reports\\drawing-drc.json",
+      "role": "drawing-drc",
+      "sha256": "489ff798487b86ed64c97569f2678259d844c28e00ca85ed2d823c5f15f52e16"
+    },
+    {
+      "bytes": 1312,
+      "index": 15,
+      "path": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock\\reports\\autocad-dxf-audit.json",
+      "role": "autocad-dxf-audit",
+      "sha256": "237b6eee6af0fe36658224f08c55700f00af9cdacd4d2edb58e9128f180efcad"
+    }
+  ],
+  "boundary": "Manifest consistency does not prove model quality, export equivalence, or approval.",
+  "findings": [],
+  "role_counts": {
+    "autocad-dxf-audit": 1,
+    "concept-board": 1,
+    "design-review": 1,
+    "drawing-drc": 1,
+    "dxf": 1,
+    "exploded-render": 1,
+    "failure-board": 1,
+    "geometry-drc": 1,
+    "motion-render": 1,
+    "motion-table": 1,
+    "native-source": 1,
+    "pdf": 1,
+    "render": 1,
+    "section-render": 1,
+    "step": 1,
+    "stl": 1
+  },
+  "root": "C:\\Users\\rog\\Documents\\Codex\\2026-07-17\\new-chat\\work\\standalone-mechanical-design-gbt\\examples\\case-studies\\orbit-cable-dock",
+  "source": {
+    "configuration": "prototype-fdm",
+    "revision": "C",
+    "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+    "units": "mm"
+  },
+  "status": "PASS",
+  "validator": "check_model_manifest"
+}

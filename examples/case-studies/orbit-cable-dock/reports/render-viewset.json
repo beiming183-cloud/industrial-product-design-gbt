@@ -1,0 +1,15 @@
+{
+  "boundary": "Camera and pixel integrity do not prove model correctness, surface quality, lighting taste, or product appeal.",
+  "expect_change": true,
+  "findings": [],
+  "results": [
+    {
+      "height": 1200,
+      "mean_abs_difference": 14.397623456790123,
+      "view": "iso",
+      "width": 1800
+    }
+  ],
+  "status": "PASS",
+  "validator": "compare_render_viewset"
+}

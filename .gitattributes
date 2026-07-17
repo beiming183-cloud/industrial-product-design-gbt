@@ -1,0 +1,22 @@
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+*.step -text
+*.stp -text
+*.stl -text
+*.glb -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.pdf -text
+*.dxf -text
+*.dwg -text

@@ -1,0 +1,9 @@
+item,part_id,description,qty,material_process,status,authority,notes
+1,ORBIT-001,Soft-square fixed base,1,PETG FDM prototype,DEFINED,project Rev C,Use slicer infill; physical stability TBD
+2,ORBIT-002,Four-slot circular rotor,1,PETG FDM prototype,DEFINED,project Rev C,Four equal true U-grooves
+3,ORBIT-003,Plain rotary bushing,1,POM machined or printed prototype,TBD,concept assumption,Material and fit after prototype measurement
+4,ORBIT-004,Replaceable detent flexure insert,1,PETG/PA prototype,TBD,concept assumption,Force and life NOT_EVALUATED
+5,ORBIT-005,TPU cable-slot floor pad,4,TPU FDM prototype,TBD,concept assumption,Cable sample fit required
+6,ORBIT-006,Centre retainer cap,1,PETG FDM prototype,DEFINED,project Rev C,Recessed flush fastener access
+7,HW-M4-TBD,M4 retention screw and receiving insert,1,Supplier item,TBD,supplier not selected,Envelope only; do not manufacture from CAD representation
+

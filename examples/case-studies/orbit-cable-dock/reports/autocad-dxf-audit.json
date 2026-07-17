@@ -1,0 +1,31 @@
+{
+  "validator": "autocad_mcp_audit_dxf",
+  "status": "PASS",
+  "revision": "C",
+  "path": "output/engineering/orbit-engineering-handoff.dxf",
+  "dxf_version": "AC1032",
+  "units": {"code": 4, "name": "millimeters"},
+  "entity_count": 60,
+  "bounds_mm": {"min": [10.0, 10.0], "max": [410.0, 287.0]},
+  "geometry_digest": "d2bb74ed716892fcd84d2014479602fef22f95fe686a906d6e4034593171c75d",
+  "geometry_drc": {
+    "status": "PASS",
+    "issue_count": 0,
+    "rules": {
+      "ZERO_LENGTH_SEGMENT": 0,
+      "SHORT_SEGMENT": 0,
+      "POLYLINE_DUPLICATE_VERTEX": 0,
+      "POLYLINE_DUPLICATE_CLOSING_VERTEX": 0,
+      "POLYLINE_SELF_INTERSECTION": 0,
+      "DUPLICATE_ENTITY": 0,
+      "DANGLING_ENDPOINT": 0,
+      "NEAR_MISS_ENDPOINT": 0,
+      "INTERIOR_CROSSING": 0,
+      "UNASSIGNED_ENTITY": 0,
+      "MISSING_SEMANTIC_FIELD": 0
+    }
+  },
+  "history": "The first audit found 20 dangling endpoints and 13 interior crossings. The DXF generator was corrected to emit continuous arc-slot boundaries and non-overlapping section material. A second audit found two post/base crossings; the integral post boundary was then corrected. This report records the final third audit.",
+  "boundary": "A geometry-clean DXF does not prove production drawing completeness, tolerance selection, or external GB/T approval."
+}
+

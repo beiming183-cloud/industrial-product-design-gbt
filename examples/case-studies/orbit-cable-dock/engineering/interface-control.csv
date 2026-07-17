@@ -1,0 +1,8 @@
+interface_id,owner,mating_item,nominal_mm,authority,status,verification
+IF-01,rotor,cable OD,slot width 6.4 x depth 18,D concept assumption,TBD,Test 3-6 mm cable set
+IF-02,rotor,bushing,16.5 bore / 16.0 OD,D concept assumption,TBD,Print and measure rotational drag
+IF-03,bushing,base axle,10.3 ID / 10.0 OD,D concept assumption,TBD,Print and measure free rotation
+IF-04,cap,M4 fastener,head recess and engagement TBD,D concept assumption,TBD,Select controlled hardware
+IF-05,detent insert,base pockets,31.5 radius / four at 90 deg,D concept assumption,TBD,Measure torque and cycle life
+IF-06,rotor,base,1.2 axial shadow gap,A project drawing,DEFINED,Inspect in section and with feeler gauge on prototype
+

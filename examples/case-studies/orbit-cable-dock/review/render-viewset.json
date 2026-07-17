@@ -1,0 +1,45 @@
+{
+  "root": "..",
+  "expect_change": true,
+  "required_view_ids": [
+    "iso"
+  ],
+  "baseline": {
+    "source": {
+      "revision": "A-failed",
+      "source_hash": "3f3c2bd4d7b135522d851cafe37f3cfedce8bfe128ab1af43fc707673ff8ab52",
+      "units": "mm"
+    },
+    "views": [
+      {
+        "id": "iso",
+        "path": "output/review/failed_rev_a_iso_20260717T143154Z.png",
+        "configuration": "0deg",
+        "camera": {
+          "preset": "iso",
+          "projection": "orthographic"
+        },
+        "color_pipeline": "CAD snapshot workbench"
+      }
+    ]
+  },
+  "candidate": {
+    "source": {
+      "revision": "C",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "units": "mm"
+    },
+    "views": [
+      {
+        "id": "iso",
+        "path": "output/review/final_rev_c_iso_20260717T143154Z.png",
+        "configuration": "0deg",
+        "camera": {
+          "preset": "iso",
+          "projection": "orthographic"
+        },
+        "color_pipeline": "CAD snapshot workbench"
+      }
+    ]
+  }
+}

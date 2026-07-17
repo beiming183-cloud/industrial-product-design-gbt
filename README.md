@@ -69,6 +69,16 @@ See [`examples/quickstart`](examples/quickstart) for inputs and expected reports
 
 Every failed gate returns to the owning design stage. Extra dimensions, labels, or polished renders cannot convert a failed concept into an approved product.
 
+## Complete case study
+
+<p align="center">
+  <img src="examples/case-studies/orbit-cable-dock/output/review/failed-to-final.png" alt="ORBIT valid-but-failed Rev A compared with optimized Rev C" width="100%">
+</p>
+
+[`ORBIT four-station rotary cable dock`](examples/case-studies/orbit-cable-dock) is the first end-to-end public case: complete brief and design DNA, three real B-rep concepts, a preserved failed STEP revision, optimized multi-part parametric 3D, named motion states, native CAD review views, section/exploded evidence, DXF/PDF/BOM handoff, and validators that actually ran.
+
+It also demonstrates the project's core boundary: a valid solid can fail industrial design, while a polished final render still cannot replace cable-fit, detent-life, stability, or manufacturing tests.
+
 ## What is included
 
 - product brief, immutable design DNA, concept comparison, and maturity gates;
@@ -162,7 +172,8 @@ No. The workflow is backend-neutral, but each claimed result requires a backend 
 - [x] Evidence authority, 3D quality, motion, DRC, and failure-learning gates
 - [x] Private repeated-iteration project learning
 - [x] Runnable quickstart and repository validation
-- [ ] Three complete public product case studies
+- [x] First complete public product case study: ORBIT rotary cable dock
+- [ ] Two additional complete public product case studies
 - [ ] Pinned local parametric B-rep backend fixtures
 - [ ] GB/T drawing output example paired with the exact approved design revision
 - [ ] Stable v1.0 after real-project forward tests

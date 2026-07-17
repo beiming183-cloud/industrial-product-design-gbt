@@ -1,0 +1,170 @@
+{
+  "validator": "orbit_case_geometry_drc",
+  "status": "PASS",
+  "revision": "C",
+  "configuration": "prototype-fdm",
+  "verification_tier": "Tier 3 release-style evidence for a prototype handoff",
+  "parts": [
+    {
+      "name": "base",
+      "valid": true,
+      "volume_mm3": 89501.516,
+      "bbox_mm": [
+        96.0,
+        96.0,
+        19.6
+      ]
+    },
+    {
+      "name": "bushing",
+      "valid": true,
+      "volume_mm3": 1059.651,
+      "bbox_mm": [
+        16.0,
+        16.0,
+        9.0
+      ]
+    },
+    {
+      "name": "rotor",
+      "valid": true,
+      "volume_mm3": 73514.598,
+      "bbox_mm": [
+        84.0,
+        84.0,
+        14.8
+      ]
+    },
+    {
+      "name": "slot_liner_set",
+      "valid": true,
+      "volume_mm3": 261.153,
+      "bbox_mm": [
+        76.0,
+        76.0,
+        0.75
+      ]
+    },
+    {
+      "name": "detent_insert",
+      "valid": true,
+      "volume_mm3": 106.355,
+      "bbox_mm": [
+        17.4,
+        5.0,
+        3.2
+      ]
+    },
+    {
+      "name": "retainer_cap",
+      "valid": true,
+      "volume_mm3": 1024.617,
+      "bbox_mm": [
+        24.0,
+        24.0,
+        2.4
+      ]
+    },
+    {
+      "name": "fastener_envelope",
+      "valid": true,
+      "volume_mm3": 277.56,
+      "bbox_mm": [
+        7.0,
+        7.0,
+        15.9
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "rule_id": "BREP_VALID",
+      "status": "PASS",
+      "measured": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "rule_id": "ENVELOPE_X",
+      "status": "PASS",
+      "measured_mm": 96.00000009801474,
+      "threshold_mm": 100.0
+    },
+    {
+      "rule_id": "ENVELOPE_Y",
+      "status": "PASS",
+      "measured_mm": 96.00000000000011,
+      "threshold_mm": 100.0
+    },
+    {
+      "rule_id": "ENVELOPE_Z",
+      "status": "PASS",
+      "measured_mm": 26.7,
+      "threshold_mm": 30.0
+    },
+    {
+      "rule_id": "SLOT_SHARED_SOURCE",
+      "status": "PASS",
+      "measured_count": 4,
+      "width_mm": 6.4,
+      "depth_mm": 18.0
+    },
+    {
+      "rule_id": "SHADOW_GAP",
+      "status": "PASS",
+      "measured_mm": 1.1999999999999993
+    },
+    {
+      "rule_id": "ROTOR_BUSHING_CLEARANCE",
+      "status": "PASS",
+      "measured_mm": 0.5,
+      "authority": "D/TBD"
+    },
+    {
+      "rule_id": "AXLE_BUSHING_CLEARANCE",
+      "status": "PASS",
+      "measured_mm": 0.3000000000000007,
+      "authority": "D/TBD"
+    },
+    {
+      "rule_id": "ROTATION_ENVELOPE",
+      "status": "PASS",
+      "rotor_diameter_mm": 84.0,
+      "base_min_span_mm": 96.0
+    }
+  ],
+  "stl": {
+    "path": "output\\models\\meshes\\orbit-final.stl",
+    "watertight": false,
+    "bounds_mm": [
+      [
+        -48.0,
+        -48.0,
+        -0.0
+      ],
+      [
+        48.0,
+        48.0,
+        26.7
+      ]
+    ],
+    "geometry_count": 1,
+    "boundary": "Mesh is a derived multi-part prototype export; STEP remains authoritative."
+  },
+  "not_evaluated": [
+    "strength",
+    "wear",
+    "detent force/life",
+    "print compensation",
+    "friction",
+    "tip stability",
+    "cable retention force"
+  ],
+  "boundary": "This report proves named geometry and parameter relations only; it does not prove production manufacturability or physical performance."
+}

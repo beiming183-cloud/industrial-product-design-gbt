@@ -1,0 +1,17 @@
+{
+  "revision": "C",
+  "configuration_source": "cad/orbit_model.py + cad/orbit_state_*.py",
+  "joints": [
+    {"id": "rotor_about_z", "type": "revolute", "axis": [0, 0, 1], "limits": [0, 360], "units": "deg", "fixed_component": "base"}
+  ],
+  "required_states": ["index_000", "mid_045", "index_090", "index_180", "index_270"],
+  "states": [
+    {"name": "index_000", "joint_values": {"rotor_about_z": 0}, "collision_status": "PASS", "cable_status": "PASS", "interface_status": "PASS", "artifact": "output/models/orbit-final.step"},
+    {"name": "mid_045", "joint_values": {"rotor_about_z": 45}, "collision_status": "PASS", "cable_status": "PASS", "interface_status": "PASS", "artifact": "output/models/orbit-state-045.step"},
+    {"name": "index_090", "joint_values": {"rotor_about_z": 90}, "collision_status": "PASS", "cable_status": "PASS", "interface_status": "PASS", "artifact": "output/models/orbit-state-090.step"},
+    {"name": "index_180", "joint_values": {"rotor_about_z": 180}, "collision_status": "PASS", "cable_status": "PASS", "interface_status": "PASS", "artifact": "output/models/orbit-state-180.step"},
+    {"name": "index_270", "joint_values": {"rotor_about_z": 270}, "collision_status": "PASS", "cable_status": "PASS", "interface_status": "PASS", "artifact": "output/models/orbit-state-270.step"}
+  ],
+  "evidence_boundary": "PASS records exact source-generated poses, circular rotor envelope inside the base footprint, positive axial gap, and open slot access. It does not prove cable dynamics, detent force, wear, or stability."
+}
+

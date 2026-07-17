@@ -1,0 +1,80 @@
+{
+  "boundary": "Schema and recorded dispositions are checked; CAD collision, cable physics, loads, and safety require independent evidence.",
+  "configuration_source": "cad/orbit_model.py + cad/orbit_state_*.py",
+  "findings": [],
+  "revision": "C",
+  "state_results": [
+    {
+      "joint_checks": [
+        {
+          "inside": true,
+          "joint": "rotor_about_z",
+          "limits": [
+            0,
+            360
+          ],
+          "value": 0.0
+        }
+      ],
+      "state": "index_000"
+    },
+    {
+      "joint_checks": [
+        {
+          "inside": true,
+          "joint": "rotor_about_z",
+          "limits": [
+            0,
+            360
+          ],
+          "value": 45.0
+        }
+      ],
+      "state": "mid_045"
+    },
+    {
+      "joint_checks": [
+        {
+          "inside": true,
+          "joint": "rotor_about_z",
+          "limits": [
+            0,
+            360
+          ],
+          "value": 90.0
+        }
+      ],
+      "state": "index_090"
+    },
+    {
+      "joint_checks": [
+        {
+          "inside": true,
+          "joint": "rotor_about_z",
+          "limits": [
+            0,
+            360
+          ],
+          "value": 180.0
+        }
+      ],
+      "state": "index_180"
+    },
+    {
+      "joint_checks": [
+        {
+          "inside": true,
+          "joint": "rotor_about_z",
+          "limits": [
+            0,
+            360
+          ],
+          "value": 270.0
+        }
+      ],
+      "state": "index_270"
+    }
+  ],
+  "status": "PASS",
+  "validator": "validate_motion_states"
+}

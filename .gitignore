@@ -6,3 +6,6 @@ Thumbs.db
 work/
 dist/
 examples/quickstart/output/
+.venv-case/
+examples/case-studies/**/output/models/.*.step.glb
+!examples/case-studies/orbit-cable-dock/output/models/.orbit-final.step.glb

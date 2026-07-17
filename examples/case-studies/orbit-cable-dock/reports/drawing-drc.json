@@ -1,0 +1,26 @@
+{
+  "validator": "orbit_case_drawing_drc",
+  "status": "PASS",
+  "revision": "C",
+  "dxf": {
+    "path": "output\\engineering\\orbit-engineering-handoff.dxf",
+    "acad_version": "AC1032",
+    "insunits": 4,
+    "entity_counts": {
+      "LWPOLYLINE": 9,
+      "LINE": 20,
+      "ARC": 20,
+      "CIRCLE": 2,
+      "TEXT": 9
+    },
+    "audit_errors": 0,
+    "audit_fixes": 0
+  },
+  "pdf": {
+    "path": "output\\engineering\\orbit-engineering-handoff.pdf",
+    "bytes": 481618,
+    "plot_mode": "FIT/NTS"
+  },
+  "semantic_disposition": "Prototype handoff drawing; dimensions marked TBD are not released manufacturing requirements.",
+  "boundary": "DXF/PDF integrity and shared parameters do not prove GB/T production drawing completeness."
+}

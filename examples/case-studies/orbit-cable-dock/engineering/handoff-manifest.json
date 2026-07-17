@@ -1,0 +1,166 @@
+{
+  "root": "..",
+  "source": {
+    "revision": "C",
+    "configuration": "prototype-fdm",
+    "units": "mm",
+    "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586"
+  },
+  "required_roles": [
+    "native-source",
+    "step",
+    "stl",
+    "dxf",
+    "pdf",
+    "design-review",
+    "motion-table",
+    "render"
+  ],
+  "artifacts": [
+    {
+      "role": "native-source",
+      "path": "cad/orbit_model.py",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586"
+    },
+    {
+      "role": "step",
+      "path": "output/models/orbit-final.step",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "bd21c0a64c25cbec3024f13163ed11ceb293b0be903630da81116a29dd6b3661"
+    },
+    {
+      "role": "stl",
+      "path": "output/models/meshes/orbit-final.stl",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "fbb84a7a24bdbfb9baa76ef81e2ae96487803d47165549b92e89b13c21655ffb"
+    },
+    {
+      "role": "dxf",
+      "path": "output/engineering/orbit-engineering-handoff.dxf",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "f56652734b1b63a803bf88b7bc415216d3d2366ac76ece89fd894ea1d99e0a14"
+    },
+    {
+      "role": "pdf",
+      "path": "output/engineering/orbit-engineering-handoff.pdf",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "da8f501e3849ec18acb2d38659ff51b6796f63e0a698de986de85096d3886ff8"
+    },
+    {
+      "role": "design-review",
+      "path": "design-review.md",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "826e27e1c2f694182cdc85e018ce92b5314b0b3319e25c884e222c46ca670120"
+    },
+    {
+      "role": "motion-table",
+      "path": "engineering/motion-states.json",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "d2bb27b0398191eb6575d96c9703529fdaa927920cce97945a9c31728056e517"
+    },
+    {
+      "role": "render",
+      "path": "output/review/final-hero.png",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "bf3f31b4e901b8ba9a39768437383cc2d0023f10db546e499b1d2602c5b57ed6"
+    },
+    {
+      "role": "exploded-render",
+      "path": "output/review/final-exploded.png",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "53b15429946cc852534f8057581b5e88261424a70cc1bc2ea710613f7ee59219"
+    },
+    {
+      "role": "section-render",
+      "path": "output/review/final-section.png",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "cda038a6a84371d311d45c8a715a9c645057c3d3b195e819dcc6c0e9645fffd3"
+    },
+    {
+      "role": "motion-render",
+      "path": "output/review/motion-state-045.png",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "d7c11116a219612565ba55a4a424297725b8ac7933c8c91de6d851bc05102534"
+    },
+    {
+      "role": "concept-board",
+      "path": "output/review/concept-board.png",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "52a4e45f84db11d84840e0e170c65a6b79dd4290f88e5651c9a9741b42037447"
+    },
+    {
+      "role": "failure-board",
+      "path": "output/review/failed-to-final.png",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "50141e9d7daa7a45c3f11dd92d576a4eea19e69d424366f6fadf1cd33cb38781"
+    },
+    {
+      "role": "geometry-drc",
+      "path": "reports/geometry-drc.json",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "463dd6bed75f5cace7ad1d5d4f32001bc6daceb8c4bcf0e3424ddadb6810f1be"
+    },
+    {
+      "role": "drawing-drc",
+      "path": "reports/drawing-drc.json",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "489ff798487b86ed64c97569f2678259d844c28e00ca85ed2d823c5f15f52e16"
+    },
+    {
+      "role": "autocad-dxf-audit",
+      "path": "reports/autocad-dxf-audit.json",
+      "revision": "C",
+      "configuration": "prototype-fdm",
+      "units": "mm",
+      "source_hash": "7b9eeb56462dd51bcae2c20393a716f4a524cddab06ee012fff23ddf5db20586",
+      "sha256": "237b6eee6af0fe36658224f08c55700f00af9cdacd4d2edb58e9128f180efcad"
+    }
+  ],
+  "release_status": "prototype engineering handoff; external appearance approval and physical verification pending"
+}

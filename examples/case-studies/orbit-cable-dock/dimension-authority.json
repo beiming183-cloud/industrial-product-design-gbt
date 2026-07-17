@@ -1,0 +1,62 @@
+{
+  "document_id": "orbit-cable-dock",
+  "revision": "C",
+  "dimensions": [
+    {
+      "id": "overall-footprint",
+      "dimension_kind": "project_envelope",
+      "category": "product-envelope",
+      "value": [96.0, 96.0],
+      "units": "mm",
+      "status": "CONFIRMED",
+      "authority_level": "A",
+      "authority_basis": "project_controlled_drawing",
+      "source_id": "orbit_params.py@Rev-C"
+    },
+    {
+      "id": "overall-height",
+      "dimension_kind": "project_envelope",
+      "category": "product-envelope",
+      "value": 26.7,
+      "units": "mm",
+      "status": "CONFIRMED",
+      "authority_level": "A",
+      "authority_basis": "project_controlled_drawing",
+      "source_id": "orbit_params.py@Rev-C"
+    },
+    {
+      "id": "cable-slot-width",
+      "dimension_kind": "detail_geometry",
+      "category": "cable-interface",
+      "value": 6.4,
+      "units": "mm",
+      "status": "TBD",
+      "authority_level": "D",
+      "authority_basis": "concept_assumption",
+      "source_id": "prototype-assumption-cable-od-3-to-6-mm"
+    },
+    {
+      "id": "rotor-bushing-diametral-clearance",
+      "dimension_kind": "prototype_fit",
+      "category": "rotary-fit",
+      "value": 0.5,
+      "units": "mm",
+      "status": "TBD",
+      "authority_level": "D",
+      "authority_basis": "concept_assumption",
+      "source_id": "prototype-printer-and-material-not-selected"
+    },
+    {
+      "id": "m4-fastener-envelope",
+      "dimension_kind": "detail_geometry",
+      "category": "installation-hole",
+      "value": "TBD",
+      "units": "mm",
+      "status": "TBD",
+      "authority_level": "D",
+      "authority_basis": "concept_assumption",
+      "source_id": "supplier-part-not-selected"
+    }
+  ]
+}
+
