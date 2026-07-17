@@ -58,6 +58,8 @@ The workflow includes backend capability, document identity, massing, form langu
 
 Deterministic scripts check:
 
+- pre-CAD design-brief completeness and immutable design DNA;
+- A/B/C/D authority levels for critical dimensions and TBD behavior;
 - active document and revision identity;
 - 2D/3D interface alignment;
 - named motion states and limits;
