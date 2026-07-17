@@ -63,15 +63,9 @@ See [`examples/quickstart`](examples/quickstart) for inputs and expected reports
 
 ## Workflow
 
-```mermaid
-flowchart LR
-  A["Brief + Design DNA"] --> B["3 Comparable Concepts"]
-  B --> C["Parametric Massing"]
-  C --> D["Refined Native 3D"]
-  D --> E["Design + Motion Review"]
-  E --> F["Revision-bound Handoff"]
-  F --> G["mechanical-drafting-gbt"]
-```
+<p align="center">
+  <img src="docs/images/workflow.svg" alt="Seven-stage design-to-engineering workflow" width="100%">
+</p>
 
 Every failed gate returns to the owning design stage. Extra dimensions, labels, or polished renders cannot convert a failed concept into an approved product.
 

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">Design-to-engineering workflow</title>
+  <desc id="desc">Seven stages from product brief and design DNA to GB/T engineering drawings, with failed gates returning to the owning stage.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071526"/>
+      <stop offset="1" stop-color="#102f4b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#173550"/>
+      <stop offset="1" stop-color="#10283f"/>
+    </linearGradient>
+    <linearGradient id="finalCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#493819"/>
+      <stop offset="1" stop-color="#2d271b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#5eead4"/>
+    </marker>
+    <marker id="returnArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="330" rx="24" fill="url(#background)"/>
+  <path d="M0 78H1200" stroke="#7dd3fc" stroke-opacity="0.12"/>
+  <g font-family="Inter, Segoe UI, Microsoft YaHei, Arial, sans-serif">
+    <text x="38" y="42" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="2">DESIGN-TO-ENGINEERING PIPELINE</text>
+    <text x="38" y="66" fill="#94a3b8" font-size="14">从设计意图到可追溯的 GB/T 工程交付</text>
+    <rect x="1005" y="29" width="155" height="34" rx="17" fill="#0f766e"/>
+    <text x="1082.5" y="51" text-anchor="middle" fill="#ecfeff" font-size="13" font-weight="700">7 EVIDENCE GATES</text>
+  </g>
+
+  <g stroke="#5eead4" stroke-width="2.4" fill="none" marker-end="url(#arrow)">
+    <path d="M177 161H194"/>
+    <path d="M342 161H359"/>
+    <path d="M507 161H524"/>
+    <path d="M672 161H689"/>
+    <path d="M837 161H854"/>
+    <path d="M1002 161H1019"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Microsoft YaHei, Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(30 101)">
+      <rect width="147" height="120" rx="16" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.55"/>
+      <rect width="147" height="5" rx="2.5" fill="#38bdf8"/>
+      <circle cx="25" cy="31" r="14" fill="#075985"/><text x="25" y="36" text-anchor="middle" fill="#e0f2fe" font-size="14" font-weight="700">1</text>
+      <text x="18" y="67" fill="#f8fafc" font-size="18" font-weight="700">Brief</text>
+      <text x="18" y="91" fill="#7dd3fc" font-size="14">简报 · 设计DNA</text>
+    </g>
+    <g transform="translate(195 101)">
+      <rect width="147" height="120" rx="16" fill="url(#card)" stroke="#2dd4bf" stroke-opacity="0.55"/>
+      <rect width="147" height="5" rx="2.5" fill="#2dd4bf"/>
+      <circle cx="25" cy="31" r="14" fill="#0f766e"/><text x="25" y="36" text-anchor="middle" fill="#ccfbf1" font-size="14" font-weight="700">2</text>
+      <text x="18" y="67" fill="#f8fafc" font-size="18" font-weight="700">Concepts</text>
+      <text x="18" y="91" fill="#5eead4" font-size="14">三案 · 同尺度</text>
+    </g>
+    <g transform="translate(360 101)">
+      <rect width="147" height="120" rx="16" fill="url(#card)" stroke="#22d3ee" stroke-opacity="0.55"/>
+      <rect width="147" height="5" rx="2.5" fill="#22d3ee"/>
+      <circle cx="25" cy="31" r="14" fill="#0e7490"/><text x="25" y="36" text-anchor="middle" fill="#cffafe" font-size="14" font-weight="700">3</text>
+      <text x="18" y="67" fill="#f8fafc" font-size="18" font-weight="700">Massing</text>
+      <text x="18" y="91" fill="#67e8f9" font-size="14">比例 · 包络</text>
+    </g>
+    <g transform="translate(525 101)">
+      <rect width="147" height="120" rx="16" fill="url(#card)" stroke="#818cf8" stroke-opacity="0.62"/>
+      <rect width="147" height="5" rx="2.5" fill="#818cf8"/>
+      <circle cx="25" cy="31" r="14" fill="#4338ca"/><text x="25" y="36" text-anchor="middle" fill="#e0e7ff" font-size="14" font-weight="700">4</text>
+      <text x="18" y="67" fill="#f8fafc" font-size="18" font-weight="700">Native 3D</text>
+      <text x="18" y="91" fill="#a5b4fc" font-size="14">曲面 · 接口</text>
+    </g>
+    <g transform="translate(690 101)">
+      <rect width="147" height="120" rx="16" fill="url(#card)" stroke="#c084fc" stroke-opacity="0.58"/>
+      <rect width="147" height="5" rx="2.5" fill="#c084fc"/>
+      <circle cx="25" cy="31" r="14" fill="#7e22ce"/><text x="25" y="36" text-anchor="middle" fill="#f3e8ff" font-size="14" font-weight="700">5</text>
+      <text x="18" y="67" fill="#f8fafc" font-size="18" font-weight="700">Review</text>
+      <text x="18" y="91" fill="#d8b4fe" font-size="14">人机 · 运动 · CMF</text>
+    </g>
+    <g transform="translate(855 101)">
+      <rect width="147" height="120" rx="16" fill="url(#card)" stroke="#fb7185" stroke-opacity="0.55"/>
+      <rect width="147" height="5" rx="2.5" fill="#fb7185"/>
+      <circle cx="25" cy="31" r="14" fill="#be123c"/><text x="25" y="36" text-anchor="middle" fill="#ffe4e6" font-size="14" font-weight="700">6</text>
+      <text x="18" y="67" fill="#f8fafc" font-size="18" font-weight="700">Handoff</text>
+      <text x="18" y="91" fill="#fda4af" font-size="14">修订 · 证据</text>
+    </g>
+    <g transform="translate(1020 101)">
+      <rect width="150" height="120" rx="16" fill="url(#finalCard)" stroke="#fbbf24" stroke-opacity="0.75"/>
+      <rect width="150" height="5" rx="2.5" fill="#fbbf24"/>
+      <circle cx="25" cy="31" r="14" fill="#a16207"/><text x="25" y="36" text-anchor="middle" fill="#fef3c7" font-size="14" font-weight="700">7</text>
+      <text x="18" y="65" fill="#fffbeb" font-size="16" font-weight="700">GB/T Drafting</text>
+      <text x="18" y="91" fill="#fcd34d" font-size="14">国标工程定义</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Microsoft YaHei, Arial, sans-serif">
+    <path d="M1160 262H120c-30 0-43-17-43-35" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="7 7" marker-end="url(#returnArrow)"/>
+    <rect x="382" y="244" width="436" height="36" rx="18" fill="#172033" stroke="#fbbf24" stroke-opacity="0.45"/>
+    <text x="600" y="267" text-anchor="middle" fill="#fde68a" font-size="14" font-weight="650">FAILED GATE  ·  RETURN TO THE OWNING DESIGN STAGE</text>
+    <text x="600" y="308" text-anchor="middle" fill="#94a3b8" font-size="13">尺寸、渲染和说明文字不能掩盖失败的设计判断</text>
+  </g>
+</svg>

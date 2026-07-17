@@ -52,9 +52,10 @@ def main() -> int:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     for required in ("Five-minute quickstart", "Honest capability boundary", "FAQ", "Roadmap", "CONTRIBUTING.md"):
         require(required in readme, f"README is missing: {required}")
-    hero = ROOT / "docs" / "images" / "hero.svg"
-    require(hero.is_file(), "README hero is missing")
-    ET.parse(hero)
+    for image_name in ("hero.svg", "workflow.svg"):
+        image = ROOT / "docs" / "images" / image_name
+        require(image.is_file(), f"README image is missing: {image_name}")
+        ET.parse(image)
     for path in (
         ROOT / "CONTRIBUTING.md",
         ROOT / "CODE_OF_CONDUCT.md",
